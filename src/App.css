@@ -1,38 +1,146 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body{
+  scroll-behavior: smooth;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #30336b;
+  width: 100%;
+  height: 80px;
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 35px;
+  padding: 0 80px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-left: 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(160, 160, 160);
+  transition: all 0.5s ease-in-out;
+}
+
+.hero_container {
+  height: 550px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(/src/Img/calculator-g3b708aedf_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Section_header{
   text-align: center;
+  padding: 50px 0 50px 0;
+  font-size: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero_content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  min-height: 70vh;
+  width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+.hero_content h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero_content h2 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.hero_content p {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+img {
+  height: 550px;
+  width: 650px;
+}
+
+.Tax_conatiner {
+  margin-left: 50px;
+  display: flex;
+}
+
+.calculator {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+}
+
+.form-input input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  background-color: #30336b;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #30336b;
+  width: 100%;
+  height: 80px;
+  margin-top: 45px;
+}
+
+footer p{
+  font-size: 16px;
+  color: #fff;
 }
